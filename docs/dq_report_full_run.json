@@ -1,0 +1,149 @@
+{
+  "run_id": 1,
+  "window": "2020-2025",
+  "source_row_count": 901977,
+  "rows_extracted": 901977,
+  "rows_rejected": 94,
+  "rows_loaded": 901883,
+  "rejected_by_reason": {
+    "duplicate_dc_key_offense": 93,
+    "invalid_district": 1
+  },
+  "coords_nulled": 18757,
+  "coords_missing": 18388,
+  "coords_out_of_bounds": 369,
+  "source_hour_missing": 102176,
+  "source_hour_mismatch": 7383,
+  "batches": 72,
+  "dim_rows": {
+    "dim_date": 2192,
+    "dim_hour": 24,
+    "dim_offense": 32,
+    "dim_district": 22,
+    "dim_grid": 1500
+  },
+  "all_checks_passed": true,
+  "timings_s": {
+    "extract_s": 0.9,
+    "transform_s": 29.4,
+    "load_s": 20.3,
+    "checks_s": 2.7,
+    "export_s": 20.1,
+    "total_s": 73.3
+  },
+  "finished_at": "2026-10-25T06:43:14+00:00",
+  "checks": [
+    {
+      "name": "foreign_key_violations",
+      "description": "rows reported by PRAGMA foreign_key_check (any table)",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "orphan_date_keys",
+      "description": "fact rows whose date_key has no dim_date row",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "orphan_hours",
+      "description": "fact rows whose hour has no dim_hour row",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "orphan_offense_keys",
+      "description": "fact rows whose offense_key has no dim_offense row",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "orphan_district_codes",
+      "description": "fact rows whose district_code has no dim_district row",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "orphan_grid_ids",
+      "description": "fact rows with a grid_id missing from dim_grid",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "duplicate_source_ids",
+      "description": "source rows loaded more than once",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "duplicate_dc_key_offense",
+      "description": "same complaint number and offense loaded more than once",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "dates_outside_window",
+      "description": "fact rows dated outside the configured load window",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "future_dates",
+      "description": "fact rows dated after today",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "date_key_mismatch",
+      "description": "date_key or hour that does not match the dispatch timestamp",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "coords_out_of_bounds",
+      "description": "coordinates outside the Philadelphia bounding box",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "half_null_coords",
+      "description": "rows with only one of lat / lon set",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "empty_months",
+      "description": "calendar months in the window with zero incidents",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "anomalous_low_months",
+      "description": "months with fewer than half the median monthly volume",
+      "value": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "row_count_reconciles",
+      "description": "fact rows in window equal rows that passed every transform and dedup rule",
+      "value": 901883,
+      "expected": 901883,
+      "passed": true
+    }
+  ]
+}

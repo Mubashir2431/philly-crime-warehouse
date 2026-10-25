@@ -1,0 +1,112 @@
+district_code,ucr_group,incidents,offense_rank,pct_of_district
+01,Theft,6673,1,38.9
+01,Other Assaults,2338,2,13.6
+01,Vandalism/Criminal Mischief,1589,3,9.3
+01,Fraud,1514,4,8.8
+01,Motor Vehicle Theft,1381,5,8.0
+02,Theft,17984,1,37.5
+02,Other Assaults,7244,2,15.1
+02,Motor Vehicle Theft,4951,3,10.3
+02,Vandalism/Criminal Mischief,4428,4,9.2
+02,Fraud,2843,5,5.9
+03,Theft,16351,1,41.5
+03,Other Assaults,5309,2,13.5
+03,Vandalism/Criminal Mischief,3510,3,8.9
+03,Motor Vehicle Theft,3173,4,8.1
+03,All Other Offenses,3133,5,8.0
+05,Theft,5755,1,41.6
+05,Other Assaults,1989,2,14.4
+05,Vandalism/Criminal Mischief,1382,3,10.0
+05,Motor Vehicle Theft,1239,4,9.0
+05,Fraud,1142,5,8.3
+06,Theft,13367,1,45.7
+06,Other Assaults,3955,2,13.5
+06,All Other Offenses,2352,3,8.0
+06,Vandalism/Criminal Mischief,2298,4,7.9
+06,Burglary,1343,5,4.6
+07,Theft,8708,1,42.0
+07,Other Assaults,2654,2,12.8
+07,Fraud,2152,3,10.4
+07,Motor Vehicle Theft,2063,4,9.9
+07,Vandalism/Criminal Mischief,1657,5,8.0
+08,Theft,12860,1,38.6
+08,Other Assaults,5619,2,16.9
+08,Vandalism/Criminal Mischief,2895,3,8.7
+08,Motor Vehicle Theft,2849,4,8.6
+08,All Other Offenses,2605,5,7.8
+09,Theft,23900,1,46.5
+09,Other Assaults,6497,2,12.6
+09,All Other Offenses,4829,3,9.4
+09,Vandalism/Criminal Mischief,3719,4,7.2
+09,Motor Vehicle Theft,2651,5,5.2
+12,Theft,11346,1,22.1
+12,Other Assaults,9901,2,19.3
+12,Vandalism/Criminal Mischief,5405,3,10.5
+12,All Other Offenses,5292,4,10.3
+12,Motor Vehicle Theft,4706,5,9.2
+14,Theft,13053,1,24.7
+14,Other Assaults,10579,2,20.0
+14,Vandalism/Criminal Mischief,6005,3,11.4
+14,Motor Vehicle Theft,4518,4,8.6
+14,Fraud,4284,5,8.1
+15,Theft,21058,1,30.5
+15,Other Assaults,11306,2,16.4
+15,Motor Vehicle Theft,7258,3,10.5
+15,Vandalism/Criminal Mischief,7113,4,10.3
+15,All Other Offenses,5564,5,8.1
+16,Theft,7107,1,23.7
+16,All Other Offenses,5009,2,16.7
+16,Other Assaults,4793,3,16.0
+16,Vandalism/Criminal Mischief,3003,4,10.0
+16,Aggravated Assault,1999,5,6.7
+17,Theft,8846,1,37.5
+17,Other Assaults,3127,2,13.3
+17,Vandalism/Criminal Mischief,2224,3,9.4
+17,All Other Offenses,2095,4,8.9
+17,Motor Vehicle Theft,1687,5,7.2
+18,Theft,11822,1,28.0
+18,Other Assaults,6396,2,15.1
+18,All Other Offenses,4613,3,10.9
+18,Vandalism/Criminal Mischief,4382,4,10.4
+18,Motor Vehicle Theft,3222,5,7.6
+19,Other Assaults,13418,1,24.7
+19,Theft,12343,2,22.8
+19,Vandalism/Criminal Mischief,5854,3,10.8
+19,All Other Offenses,4520,4,8.3
+19,Motor Vehicle Theft,3923,5,7.2
+22,Theft,15232,1,23.5
+22,Other Assaults,13413,2,20.7
+22,Vandalism/Criminal Mischief,7243,3,11.2
+22,Motor Vehicle Theft,5286,4,8.2
+22,All Other Offenses,4866,5,7.5
+24,Theft,12820,1,21.6
+24,Other Assaults,7759,2,13.1
+24,All Other Offenses,6993,3,11.8
+24,Narcotic/Drug Law Violations,6676,4,11.3
+24,Vandalism/Criminal Mischief,4383,5,7.4
+25,Other Assaults,9535,1,17.1
+25,Theft,9271,2,16.7
+25,All Other Offenses,8623,3,15.5
+25,Aggravated Assault,4790,4,8.6
+25,Vandalism/Criminal Mischief,4781,5,8.6
+26,Theft,13939,1,34.8
+26,Other Assaults,4994,2,12.5
+26,Motor Vehicle Theft,4992,3,12.5
+26,Vandalism/Criminal Mischief,3882,4,9.7
+26,All Other Offenses,2688,5,6.7
+35,Theft,10878,1,20.8
+35,Other Assaults,10239,2,19.5
+35,Vandalism/Criminal Mischief,5742,3,11.0
+35,Motor Vehicle Theft,5301,4,10.1
+35,All Other Offenses,5212,5,9.9
+39,Theft,11295,1,23.2
+39,Other Assaults,9794,2,20.1
+39,Vandalism/Criminal Mischief,5001,3,10.3
+39,All Other Offenses,4937,4,10.2
+39,Motor Vehicle Theft,3647,5,7.5
+77,Theft,2792,1,55.9
+77,Fraud,641,2,12.8
+77,Other Assaults,382,3,7.6
+77,Motor Vehicle Theft,268,4,5.4
+77,All Other Offenses,181,5,3.6
+77,Vandalism/Criminal Mischief,181,5,3.6

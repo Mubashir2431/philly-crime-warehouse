@@ -1,0 +1,50 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -e ".[dev]"
+
+      - name: Lint
+        run: |
+          ruff check .
+          ruff format --check .
+
+      - name: Unit and fixture tests
+        run: pytest -v
+
+      - name: End-to-end ETL on the committed fixture sample
+        run: |
+          python -m phl_crime.pipeline run \
+            --raw-file tests/fixtures/sample_raw.csv \
+            --db ci/warehouse.db --out-dir ci \
+            --no-dashboard-export
+          python -m phl_crime.pipeline check --db ci/warehouse.db
+          python -m phl_crime.pipeline analyze --db ci/warehouse.db --out-dir ci/analysis
+          cat ci/dq_report.json
+
+      - name: Data-quality tests against the end-to-end build
+        env:
+          PHL_TEST_DB: ci/warehouse.db
+        run: pytest -v tests/test_warehouse.py
+
+      - name: Upload data-quality report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dq-report
+          path: ci/dq_report.json
